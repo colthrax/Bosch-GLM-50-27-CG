@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <!-- Target Windows 10.0.22621.0 (or later) and enable WinRT APIs -->
+    <TargetFramework>net8.0-windows10.0.22621.0</TargetFramework>
+    <UseWindowsRuntime>true</UseWindowsRuntime>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- BLE/GATT client for GLM-50 CG -->
+    <PackageReference Include="InTheHand.BluetoothLE" Version="4.0.41" />
+    <!-- Classic-Bluetooth SPP listener -->
+    <PackageReference Include="InTheHand.Net.Bluetooth" Version="4.2.1" />
+  </ItemGroup>
+</Project>
